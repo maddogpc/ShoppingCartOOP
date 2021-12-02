@@ -2,8 +2,9 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Order {
-    String buyerName;
+public class Order implements java.io.Serializable {
+    String buyerEmail;
+    String sellerEmail;
     String email;
     Card cardInfo;
     ShippingDetails shippingDetails;
@@ -20,8 +21,9 @@ public class Order {
         return totalCost;
     }
 
-    public Order(String buyerName, String email, Card cardInfo, ShippingDetails shippingDetails) {
-        this.buyerName = buyerName;
+    public Order(String buyerEmail, String sellerEmail, String email, Card cardInfo, ShippingDetails shippingDetails) {
+        this.buyerEmail = buyerEmail;
+        this.sellerEmail = sellerEmail;
         this.email = email;
         this.cardInfo = cardInfo;
         this.shippingDetails = shippingDetails;

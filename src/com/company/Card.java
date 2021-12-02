@@ -1,6 +1,6 @@
-package com.company;
 
-public class Card {
+package com.company;
+public class Card implements java.io.Serializable {
     String cardNum;
     String expDate;
     String pin;

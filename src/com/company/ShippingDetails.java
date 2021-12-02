@@ -1,6 +1,6 @@
 package com.company;
 
-public class ShippingDetails {
+public class ShippingDetails implements java.io.Serializable {
     String address;
     String city;
     String region;

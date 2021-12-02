@@ -1,6 +1,6 @@
 package com.company;
 
-public class Product {
+public class Product implements java.io.Serializable {
     String name;
     double cost;
     String description;

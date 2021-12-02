@@ -1,6 +1,6 @@
 package com.company;
 
-public class Payment {
+public class Payment implements java.io.Serializable {
     String accountNumber;
     String routingNumber;
     String accountType;
