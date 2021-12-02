@@ -17,4 +17,15 @@ public class ProductList {
         return null;
         // raise exception
     }
+
+    public ArrayList<Product> listProductsBySeller(String sellerName) {
+        ArrayList<Product> list = new ArrayList<Product>();
+        for (Product prod : products) {
+            if (prod.seller == sellerName) {
+                list.add(prod);
+            }
+        }
+        return list;
+        // raise exception if not found
+    }
 }
